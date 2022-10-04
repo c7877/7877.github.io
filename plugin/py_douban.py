@@ -48,7 +48,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		for item in joList:
 			rating = item['rating']['value'] if item['rating'] else ""
 			lists.append({
-				"vod_id": item['id'],
+				"vod_id": f'msearch:{item.get("type", "")}__{item.get("id", "")}',
 				"vod_name": item['title'],
 				"vod_pic": item['pic']['normal'],
 				"vod_remarks": rating
@@ -92,7 +92,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			rating = vod.get("rating", "").get("value", "") if vod.get("rating", "") else ""
 			pic = vod.get("pic", "").get("normal", "") if vod.get("pic", "") else ""
 			videos.append({
-				"vod_id": vod['id'],
+				"vod_id": f'msearch:{vod.get("type", "")}__{vod.get("id", "")}',
 				"vod_name": vod['title'],
 				"vod_pic": pic,
 				"vod_remarks": rating
