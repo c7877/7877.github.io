@@ -26,8 +26,8 @@ class Spider(Spider):  # 元类 默认的元类 type
         result = {}
         cateManual = {
             "七米蓝": "https://al.chirmyram.com",
-	    "小雅的盘": "http://139.159.220.126:5244",
-            "梅花盘": "https://pan.142856.xyz/OneDrive",
+	    "小雅的盘": "http://101.34.67.237:5244",
+            "梅花盘": "https://pan.142856.xyz",
             "触光云盘": "https://pan.ichuguang.com",
             "小孟资源": "https://8023.haohanba.cn/小孟丨资源大合集/无损音乐",
             "资源小站": "https://960303.xyz/ali",
